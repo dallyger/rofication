@@ -29,7 +29,7 @@ def linesplit(socket):
 
 msg = """<span font-size='small'><i>Alt+s</i>:    Dismiss notification.    <i>Alt+Enter</i>:      Mark notification seen.\n"""
 msg += """<i>Alt+r</i>:    Reload                   <i>Alt+a</i>:          Delete application notification</span>""";
-rofi_command = [ 'rofi' , '-dmenu', '-p', 'Notifications:', '-markup', '-mesg', msg]
+rofi_command = [ 'rofi' , '-dmenu', '-p', 'Notifications', '-markup', '-mesg', msg]
 
 def strip_tags(value):
   "Return the given HTML with all tags stripped."
